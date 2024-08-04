@@ -6,11 +6,6 @@ MIRACUM-Pipe incorporates tools for detecting single nucleotide variants (SNVs),
 
 MIRACUM-Pipe is intended for research use only and not for patient treatment, diagnosis and/or medical records!
 
-## Citation
-
-If you use this repository please cite:
-[![DOI](https://zenodo.org/badge/188185624.svg)](https://zenodo.org/badge/latestdoi/188185624)
-
 ## Getting Started
 
 This repo is intended to be run as docker (see [MIRACUM-Pipe-docker](https://github.com/AG-Boerries/MIRACUM-Pipe-docker)). Alternatively, you can pick a [Galaxy version](https://github.com/AG-Boerries/MIRACUM-Pipe-galaxy).
@@ -51,7 +46,7 @@ All neccessary informations about the included R-scripts can be found with the *
 
 For testing MIRACUM-Pipe an example dataset is provided and downloaded via the **setup.sh** script. It contains the necessary capture region files (`V5UTR.bed`, `V5UTR_Targets.txt`), the sequence files (`germline_R{1/2}.fastq.gz`, `tumor_R{1/2}.fastq.gz`) and the `patient.yaml`. For the sake of runtime the fastq files were adjusted to contain only chromosome 12.
 
-## Authors
+## Authors der originalen MIRACUM-Pipeline
 
 * Patrick Metzger
 * Maria Hess
@@ -63,10 +58,6 @@ For testing MIRACUM-Pipe an example dataset is provided and downloaded via the *
 * Niklas Reimer
 * Geoffroy Andrieux
 * Melanie Börries
-
-## License
-
-This work is licensed under [GNU Affero General Public License version 3](https://opensource.org/licenses/AGPL-3.0).
 
 ## Acknowledgments
 
