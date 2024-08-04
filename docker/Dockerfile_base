@@ -1,0 +1,11 @@
+FROM debian:buster
+
+#ENV http_proxy http://proxy.ibsm.uni-freiburg.de:8080
+#ENV https_proxy http://proxy.ibsm.uni-freiburg.de:8080
+
+ADD . /opt/MIRACUM-Pipe
+
+#ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+RUN apt-get upgrade -y
+RUN /opt/MIRACUM-Pipe/debian/setup.sh

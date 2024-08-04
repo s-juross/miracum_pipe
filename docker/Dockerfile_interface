@@ -1,0 +1,19 @@
+FROM miracum_pipe_report:latest
+
+#ENV http_proxy http://proxy.ibsm.uni-freiburg.de:8080
+#ENV https_proxy http://proxy.ibsm.uni-freiburg.de:8080
+
+COPY ./*.sh /opt/MIRACUM-Pipe/
+COPY ./conf/*.yaml /opt/MIRACUM-Pipe/conf/
+
+# define volumes
+VOLUME /opt/MIRACUM-Pipe/assets/input
+VOLUME /opt/MIRACUM-Pipe/assets/output
+VOLUME /opt/MIRACUM-Pipe/assets/references
+
+VOLUME /opt/MIRACUM-Pipe/tools/annovar
+VOLUME /opt/MIRACUM-Pipe/tools/gatk
+
+VOLUME /opt/MIRACUM-Pipe/databases
+
+VOLUME /opt/MIRACUM-Pipe/conf
